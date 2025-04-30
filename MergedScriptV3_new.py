@@ -476,11 +476,12 @@ class TwitterClient:
 if __name__ == '__main__':
 
     # initial ID to extract the retweets
-    user = 'JoeBiden'
-    client = TwitterClient(ConsumerKey="8k6CYsHDnLUfoVlPHBmx8Zz0j",
-                           ConsumerSecret="Jh2EVYLm3Zs3xAw4us9z3UatWGWhQNzJdPxt4z8PL4JVPfUrjj",
-                           AccessKey="1387862088672899072-FOexJtHze7o4NVw0tAtNWhMCVmima0",
-                           AccessSecret="aiOxk322FYtVkwQyr4o1J0G1RSlgY9SFDuZyW2uh01JBT",
+    user = 'JoeBiden' # example username
+    # please include your key information here
+    client = TwitterClient(ConsumerKey="",
+                           ConsumerSecret="",
+                           AccessKey="",
+                           AccessSecret="",
                            twitter_username=user)
     print('Collecting the initial tweet data')
     tweets = client.get_user_timeline_tweets(num_tweets=1)
